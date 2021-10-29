@@ -1,7 +1,9 @@
 using FreeCourse.Services.Catalog.Services;
 using FreeCourse.Services.Catalog.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,14 +24,22 @@ namespace FreeCourse.Services.Catalog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["IdentityServerURL"];
+                options.Audience = "resource_catalog";
+                options.RequireHttpsMetadata = false;
+            });
+
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICourseService, CourseService>();
 
             services.AddAutoMapper(typeof(Startup)); //Profile referans almýþ tüm  IProfileExpression, IProfileConfiguration tarayarak reflection yaparak assembly içindeki tüm yapýlarý maplemeye dahil ediyor.
-            
 
-
-            services.AddControllers();
+            services.AddControllers(options=> 
+            {
+                options.Filters.Add(new AuthorizeFilter());
+            });
 
             //appsettings altýndaki konfigurasyon iþlemlerinde DatabaseSettings konfigurasyonunu getsection ile alýp DatabaseSettings objesine maple. Baðla.
             //IOptions<DatabaseSettings> options    options.ConnectionString olarak kullanabiliriz herhangi bir cunstroctorda
@@ -59,6 +69,8 @@ namespace FreeCourse.Services.Catalog
             }
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
