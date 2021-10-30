@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.IdentityServer", "IdentityServer\FreeCourse.IdentityServer\FreeCourse.IdentityServer.csproj", "{1965985B-B5B3-471C-B8D2-4DC45C020B2C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{4E8741F5-1575-453D-BB64-164DC7B8623C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.PhotoStock", "Services\PhotoStock\FreeCourse.Services.PhotoStock\FreeCourse.Services.PhotoStock.csproj", "{C51C2C7E-78EC-435F-A514-968F4FB213C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{1965985B-B5B3-471C-B8D2-4DC45C020B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1965985B-B5B3-471C-B8D2-4DC45C020B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1965985B-B5B3-471C-B8D2-4DC45C020B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51C2C7E-78EC-435F-A514-968F4FB213C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51C2C7E-78EC-435F-A514-968F4FB213C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51C2C7E-78EC-435F-A514-968F4FB213C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51C2C7E-78EC-435F-A514-968F4FB213C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{1F778EBF-8FDE-44A8-A9E5-4E578809AEA9} = {4075608C-9779-4292-B7C9-07C9BA378371}
 		{D1FD06FB-2474-4A86-987D-77677EA7178F} = {F69D576D-3CBE-4031-B8FD-04DB18186811}
 		{1965985B-B5B3-471C-B8D2-4DC45C020B2C} = {E407D1EC-DD2D-47F6-B0DB-E2D5877F7210}
+		{4E8741F5-1575-453D-BB64-164DC7B8623C} = {4A491317-39AC-4914-AB04-AB096A6CE324}
+		{C51C2C7E-78EC-435F-A514-968F4FB213C8} = {4E8741F5-1575-453D-BB64-164DC7B8623C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FA44105-26F0-493A-BE2B-720F590D188B}
