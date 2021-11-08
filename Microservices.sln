@@ -30,6 +30,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{90C001
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Basket", "Services\Basket\FreeCourse.Services.Basket\FreeCourse.Services.Basket.csproj", "{3AB0D506-6B1F-4D47-BD52-EE478E757997}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{87FA94E3-1D18-4A33-8A4A-6C698FD915FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Discount", "Services\Discount\FreeCourse.Services.Discount\FreeCourse.Services.Discount.csproj", "{E9056F89-E691-4E38-91F4-CE548D8EDA4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,10 @@ Global
 		{3AB0D506-6B1F-4D47-BD52-EE478E757997}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AB0D506-6B1F-4D47-BD52-EE478E757997}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AB0D506-6B1F-4D47-BD52-EE478E757997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9056F89-E691-4E38-91F4-CE548D8EDA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9056F89-E691-4E38-91F4-CE548D8EDA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9056F89-E691-4E38-91F4-CE548D8EDA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9056F89-E691-4E38-91F4-CE548D8EDA4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,8 @@ Global
 		{C51C2C7E-78EC-435F-A514-968F4FB213C8} = {4E8741F5-1575-453D-BB64-164DC7B8623C}
 		{90C001E5-21E2-4F82-A169-696BC47689D1} = {4A491317-39AC-4914-AB04-AB096A6CE324}
 		{3AB0D506-6B1F-4D47-BD52-EE478E757997} = {90C001E5-21E2-4F82-A169-696BC47689D1}
+		{87FA94E3-1D18-4A33-8A4A-6C698FD915FE} = {4A491317-39AC-4914-AB04-AB096A6CE324}
+		{E9056F89-E691-4E38-91F4-CE548D8EDA4F} = {87FA94E3-1D18-4A33-8A4A-6C698FD915FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FA44105-26F0-493A-BE2B-720F590D188B}
